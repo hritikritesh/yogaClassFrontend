@@ -1,0 +1,7 @@
+.bookedSlot{
+    background-image: url(https://www.ommagazine.com/wp-content/uploads/bb-plugin/cache/OM-Yoga-Photo-TeamUp-scaled-landscape-eccdb12ec69f4f64486053ccdd920e60-601025a4b5c7f.jpg);
+    background-size: cover;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+.signIn{
+    background-image: url(https://www.ommagazine.com/wp-content/uploads/bb-plugin/cache/OM-Yoga-Photo-TeamUp-scaled-landscape-eccdb12ec69f4f64486053ccdd920e60-601025a4b5c7f.jpg);
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm{
+    background-color: #ffffff4d;
+    padding: 30px;
+    border: 1px solid rgb(129,121,121);
+    border-radius: 1px;
+}
+
+.loginForm2{
+    background-color: #ffffff4d;
+    padding: 30px;
+    margin-top: 5px;
+    border: 1px solid rgb(129,121,121);
+    border-radius: 1px;
+}

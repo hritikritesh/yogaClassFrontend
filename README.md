@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Yoga admission form
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Introduction 
 
-In the project directory, you can run:
+User have to Signup and then user can Signin to select a slot and pay for it. Once a slot is booked then it can 
+not be booked again. Maximum four slots can be booked.
 
-### `npm start`
+Once loged in it will show homepage to book slots or booked slot page to see booked slot page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Email verification is used so that only valid email can be used. Similarly password verification is also used 
+so that strong password is set.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tools Used
 
-### `npm test`
+1. React for making the react app.
+2. fetch() method to request data from backend server.
+3. useState from react to locally store user information.
+4. jwt-decode to process to store signin token locally.
+5. BrowserRouter, Routes, Route from react-router-dom for routing.
+6. useNavigate from react-router-dom for redirection.
+7. Modal is used to confirm user about logout.
+8. Contrext is used to declare global variables.
+9. useEffect is used to check change in component and run needful functions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to deploy on vercel
 
-### `npm run build`
+1. Push your code to github.
+2. Go to vercel homepage and click on add new project.
+3. Import the repository you want to deploy.
+4. If repository is not in list give vercel access to the particular repository.
+5. During deployment select framework preset as "Create React App"
+6. Leave root directory as it is.
+7. Deploy !!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## References
+1. https://legacy.reactjs.org/docs/getting-started.html
+2. https://vercel.com/docs/frameworks/create-react-app
+3. https://developers.google.com/identity/gsi/web/guides
+4. https://api.nasa.gov/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
