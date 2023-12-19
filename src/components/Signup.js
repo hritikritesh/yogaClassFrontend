@@ -31,10 +31,13 @@ export default function Signup()
             notifyA("Password must conatain at least 8 character including at least one number and one include both lower and uppercase letters and one special character")
             return;
         }
-        const currentYear = new Date().getFullYear();
+        const currentDate = new Date();
         const year = dateOfBirth.split("-")[0];
-        const age = currentYear - year;
-        if (age < 18 || age > 65)
+        const month = dateOfBirth.split("-")[1];
+        const day = dateOfBirth.split("-")[2];
+        const lowerBoundDate = new Date(Number(year)+18,month-1,day);
+        const upperBoundDate = new Date(Number(year)+65,month-1,day);
+        if (currentDate.getTime() < lowerBoundDate.getTime() || currentDate.getTime() > upperBoundDate.getTime() )
         {
             notifyA("Age must be between 18 to 65");
             return;
