@@ -9,6 +9,7 @@ export default function Signup()
     const navigate = useNavigate();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    const [dateOfBirth, setDateOfBirth] = useState(null);
     const [password, setPassword] = useState("");
 
     // Toast function
@@ -30,6 +31,14 @@ export default function Signup()
             notifyA("Password must conatain at least 8 character including at least one number and one include both lower and uppercase letters and one special character")
             return;
         }
+        const currentYear = new Date().getFullYear();
+        const year = dateOfBirth.split("-")[0];
+        const age = currentYear - year;
+        if (age < 18 || age > 65)
+        {
+            notifyA("Age must be between 18 to 65");
+            return;
+        }
 
         fetch("https://yoga-class-backend-red.vercel.app/signup",{
             method:"post",
@@ -39,6 +48,7 @@ export default function Signup()
             body:JSON.stringify({
                 name:name,
                 email:email,
+                dateOfBirth: dateOfBirth,
                 password:password
             })
         }).then(res=>res.json())
@@ -67,6 +77,9 @@ export default function Signup()
                 </div>
                 <div>
                     <input type="text" name="name" id="name" placeholder='Full Name' value={name} onChange={(e) => {setName(e.target.value)}}/>
+                </div>
+                <div>
+                <input type="date" name="dateOfBirth" placeholder="mm/dd/yyyy" onChange={(e) => {setDateOfBirth(e.target.value)}} />
                 </div>
                 <div>
                     <input type="password" name="password" id="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />

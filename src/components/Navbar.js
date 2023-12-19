@@ -10,12 +10,16 @@ export default function Navbar({login}) {
         const token = localStorage.getItem("jwt");
         if(login || token)
         {
+            console.log(login);
             return [
                 <>
                 <Link to='/' className='nav-menu'><li>Home</li></Link>
                 <Link to='/bookedslot' className='nav-menu'><li>Booked Slot</li></Link>
                 <Link to={""}>
-                    <button className='primaryBtn' onClick={()=>setModalOpen(true)} >Log Out</button>
+                    <button className='primaryBtn' onClick={()=>{
+                        
+                        setModalOpen(true)
+                        }} >Log Out</button>
                 </Link>
                 </>
             ]
