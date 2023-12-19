@@ -61,15 +61,6 @@ export default function Home()
             </div>
             <input type="Submit" id="submit-btn" value="Pay" onClick={()=>{postData()}} />
         </div>
-        <div className="form2">
-            <Link to="/signin">
-                <span style={{color: "blue", cursor: "pointer",padding: "10px"}}>Sign In</span>
-            </Link>
-            or
-            <Link to="/signup">
-                    <span style={{color: "blue", cursor: "pointer", padding: "10px"}}>Sing Up</span>
-            </Link>
-        </div>
     </div>
 </div>
 }

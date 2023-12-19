@@ -37,6 +37,4 @@ so that strong password is set.
 ## References
 1. https://legacy.reactjs.org/docs/getting-started.html
 2. https://vercel.com/docs/frameworks/create-react-app
-3. https://developers.google.com/identity/gsi/web/guides
-4. https://api.nasa.gov/
 
